@@ -58,7 +58,7 @@ class MapBoxNavigation {
       assert(options.mode != MapBoxNavigationMode.drivingWithTraffic,
           "Error: Cannot use drivingWithTraffic Mode when you have more than 3 Stops");
     }
-    var pointList = List<Map<String, Object>>();
+    var pointList = <Map<String, Object>>[];
 
     for (int i = 0; i < wayPoints.length; i++) {
       var wayPoint = wayPoints[i];
