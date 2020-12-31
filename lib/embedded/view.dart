@@ -21,7 +21,7 @@ class MapBoxNavigationView extends StatelessWidget {
   Widget build(BuildContext context) {
     if (Platform.isAndroid) {
       return AndroidView(
-          viewType: 'FlutterMapboxNavigationView',
+          viewType: 'MapView',
           onPlatformViewCreated: _onPlatformViewCreated,
           creationParams: options.toMap(),
           creationParamsCodec: _decoder);
